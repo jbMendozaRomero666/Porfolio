@@ -1,0 +1,20 @@
+@mixin button($bg, $pd, $mg){
+  
+    background-color: $bg;
+    border: none;
+    border-radius: .3rem;
+    padding: $pd;
+    margin: $mg;
+    color: white;
+    font-size: 1.2rem;
+
+    &:hover{
+        cursor: pointer;
+        background-color: lighten($bg, 10%);
+        border: 1px solid #333;
+        box-shadow: 3px 3px 6px #333;
+        font-size: 1.4rem;
+    }
+
+    
+}
