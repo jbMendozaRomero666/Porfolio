@@ -1,0 +1,34 @@
+@use 'mixins' as m;
+
+.container{
+    max-width: 30rem;
+    margin: 5rem auto;
+    
+}
+
+.calculadora{
+    border: 1px solid #333;
+    border-radius: .3rem;
+    padding: .5rem;
+    background-color: rgba(222, 0, 177, 0.915);
+}
+
+.pantalla{
+    height: 1.5rem;
+    text-align: center;
+    padding: .3rem;
+    border: 1px solid #333;
+    margin-bottom: .2rem;
+    background-color: white;
+    border-radius: .3rem;
+    font-size: 2rem;
+    font-family: monospace;
+}
+.botones{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+}
+
+.boton{
+    @include m.button(rgb(0, 17, 255),.3rem,.2rem);
+}
