@@ -1,0 +1,80 @@
+@use 'mixins' as m;
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Fizz_Buzz {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 30rem;
+    padding: 2rem;
+    text-align: center;
+
+    label {
+        padding: 1rem;
+    }
+}
+
+.boton {
+    @include m.botones(rgb(0, 234, 90));
+
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+            minmax(150px, 1fr));
+    gap: 1rem;
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        list-style: none;
+        border: 1px solid #333;
+        height: 3rem;
+
+        .number {
+            font-size: 3rem;
+        }
+    }
+}
+
+.auto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 30rem;
+    padding: 2rem;
+    text-align: center;
+
+    label {
+        padding: 1rem;
+    }
+}
+
+
+.noche {
+    background-color: #333;
+    color: white;
+    .btn {
+        @include m.botones(rgb(255, 255, 255));
+    
+    }
+    .btn::before {
+        content: 'Dia';
+    }
+}
+
+.btn {
+    @include m.botones(rgb(0, 51, 234));
+
+}
+.btn::before {
+    content: 'Noche';
+}
