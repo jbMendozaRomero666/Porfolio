@@ -1,0 +1,15 @@
+@mixin Btn($bg,$color,$hvcolor,$hvbg,$width:100%){
+background-color: $bg;
+border: none;
+border-radius: .5rem;
+width: $width;
+height: 2rem;
+color: $color;
+font-size: large;
+font-weight: bold;
+&:hover{
+    cursor: pointer;
+    color: $hvcolor;
+    background-color:$hvbg;
+}
+}

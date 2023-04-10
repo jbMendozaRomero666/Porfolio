@@ -1,0 +1,203 @@
+.card {
+  background: rgb(24, 115, 139);
+  background: radial-gradient(circle, rgb(24, 115, 139) 10%, rgb(1, 97, 29) 37%, rgb(128, 12, 122) 67%, rgb(144, 0, 25) 95%);
+  width: 22rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.cardBody {
+  background-color: rgb(241, 197, 197);
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.cardBody img {
+  width: 100%;
+  border-radius: 350px 10px 350px 30px;
+  transition: 0.4s ease;
+}
+.cardBody span {
+  font-weight: bolder;
+  font-size: x-large;
+}
+.cardBody:hover img {
+  width: 100%;
+  border-radius: 10px 10px 10px 10px;
+}
+
+img {
+  width: 20rem;
+  height: 23rem;
+}
+
+.container {
+  padding: 0rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+p {
+  margin: none;
+}
+
+li {
+  list-style: none;
+}
+
+a button {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.carBuy {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: red;
+  height: 4rem;
+  margin-bottom: 2rem;
+}
+
+#img-carrito {
+  width: 3rem;
+  height: 3rem;
+  padding: 0rem 2rem;
+}
+#img-carrito:hover {
+  cursor: pointer;
+  filter: invert(100%);
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu #car {
+  display: none;
+}
+
+.submenu:hover #car {
+  display: flex;
+  padding: 0rem 1rem;
+  position: absolute;
+  right: 34px;
+  top: 92%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.719);
+  min-height: 400px;
+  min-width: 400px;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#lista-carrito img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.appCompras {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+#lista-Compras {
+  width: 100%;
+  text-align: center;
+}
+#lista-Compras img {
+  width: 10rem;
+  height: 10rem;
+}
+
+#resumen {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10rem;
+}
+
+#resumen td {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-left: 5rem;
+  padding-right: 2rem;
+}
+
+.cardBody .BtnComprar {
+  background-color: rgba(0, 255, 255, 0.904);
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 2rem;
+  color: rgb(56, 56, 56);
+  font-size: large;
+  font-weight: bold;
+}
+.cardBody .BtnComprar:hover {
+  cursor: pointer;
+  color: black;
+  background-color: rgba(0, 255, 255, 0.575);
+}
+
+#clearCarrito {
+  background-color: rgba(255, 0, 255, 0.904);
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 2rem;
+  color: rgb(255, 255, 255);
+  font-size: large;
+  font-weight: bold;
+}
+#clearCarrito:hover {
+  cursor: pointer;
+  color: black;
+  background-color: rgba(255, 0, 119, 0.575);
+}
+
+#comprar {
+  background-color: rgb(3, 187, 80);
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 2rem;
+  color: rgb(255, 255, 255);
+  font-size: large;
+  font-weight: bold;
+}
+#comprar:hover {
+  cursor: pointer;
+  color: black;
+  background-color: rgba(0, 255, 21, 0.575);
+}
+
+#vender {
+  margin-top: 1rem;
+  background-color: rgb(3, 187, 80);
+  border: none;
+  border-radius: 0.5rem;
+  width: 30%;
+  height: 2rem;
+  color: rgb(255, 255, 255);
+  font-size: large;
+  font-weight: bold;
+}
+#vender:hover {
+  cursor: pointer;
+  color: black;
+  background-color: rgba(0, 255, 21, 0.575);
+}
+
+/*# sourceMappingURL=style.css.map */
