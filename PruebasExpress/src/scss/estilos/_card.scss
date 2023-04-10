@@ -1,0 +1,32 @@
+@use 'mixins' as m;
+.card {
+    background: rgb(24, 115, 139);
+    background: radial-gradient(circle, rgba(24, 115, 139, 1) 10%, rgba(1, 97, 29, 1) 37%, rgba(128, 12, 122, 1) 67%, rgba(144, 0, 25, 1) 95%);
+    width: 22rem;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.cardBody {
+    background-color: rgb(241, 197, 197);
+    border-radius: 2rem;
+
+    img {
+        width: 100%;
+        border-radius: 350px 10px 350px 30px;
+        transition: .4s ease;
+    }
+
+    span{
+     font-weight: bolder;
+     font-size: x-large;
+    }
+    padding: 1rem;
+
+    &:hover {
+        img {
+            width: 100%;
+            border-radius: 10px 10px 10px 10px;
+        }
+    }    
+}

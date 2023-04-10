@@ -1,0 +1,35 @@
+.appCompras {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+#lista-Compras {
+    width: 100%;
+    text-align: center;
+
+    img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+
+}
+
+#resumen {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10rem;
+}
+
+#resumen {
+    td {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-left: 5rem;
+        padding-right: 2rem;
+    }
+}
